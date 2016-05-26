@@ -7,10 +7,10 @@ comment="test"
 else
 for args in $@
 do
-	comment=${comment}" "${args}
+	comment=${comment}${args}
 done
 fi
 comment='"'${comment}'"'
 echo $comment
-git commit -m comment
+git commit -m $comment
 git push
