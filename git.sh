@@ -11,5 +11,5 @@ do
 done
 fi
 
-git commit -m ${comment:1}
+git commit -m ${comment:2}
 git push
