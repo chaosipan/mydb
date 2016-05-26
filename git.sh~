@@ -11,6 +11,6 @@ do
 done
 fi
 echo $comment
-echo git commit -m $comment
+echo git commit -m ${comment:2}
 git commit -m $comment
 git push
