@@ -3,11 +3,11 @@
 git add .
 if [ $# == 0 ]
 then
-comment="test"
+comment = "test"
 else
 for args in $@
 do
-	comment=${comment}" "${args}
+	comment = ${comment}" "${args}
 done
 fi
 git commit -m $comment
