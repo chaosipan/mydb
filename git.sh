@@ -10,5 +10,7 @@ do
 	comment=${comment}" "${args}
 done
 fi
-git commit -m $comment
+comment='"'${comment}'"'
+echo $comment
+git commit -m comment
 git push
